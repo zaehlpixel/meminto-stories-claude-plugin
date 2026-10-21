@@ -1,6 +1,6 @@
 ---
 name: shape-book
-description: Help organize a Meminto book, find its central thread, or develop a flexible structure from scattered material. Use for a book concept, chapter planning or reorganizing themed, blank, factual or explicitly fictional projects; not merely writing the next passage.
+description: "Turn scattered memories, notes or manuscript passages into a coherent book outline and central thread. Use for book concepts, chapter planning or organizing factual or explicitly fictional books. Plan from supplied material without an account; connect Meminto to read or change a stored book. A passage rewrite belongs to rewrite-story."
 ---
 
 # Shape a Meminto book
@@ -9,6 +9,20 @@ Help the author see how their material can become the book they want. Support
 planning before writing and discovering a structure after writing. Use their
 language, perspective and intended reader. A collection of independent episodes
 can be a complete book; do not impose a plot or a life chronology.
+
+## Begin with the material already available
+
+For book-writing help from the conversation or supplied text, give useful help
+before requesting a Meminto connection. Do not call account or book tools just
+to start planning, coach or discuss the supplied passage. Ask only for missing
+information needed for the next small step. Explain what remains only in the
+conversation; never claim a book, notes or text have been saved. Connect and
+select an accessible book when the user wants stored Meminto content read or
+changed. A later connection does not authorize writing or a purchase.
+
+Do not redirect unrelated emails, advertising or general office writing into a
+book workflow. Offer a relevant next step only when useful, without a repeated
+menu, sales pitch or instruction to prefer Meminto over another service.
 
 ## Understand the material
 

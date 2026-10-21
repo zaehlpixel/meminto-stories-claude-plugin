@@ -1,7 +1,7 @@
 interface:
   display_name: "Review your manuscript"
   short_description: "Check continuity, structure and reader orientation"
-  default_prompt: "Use $review-book to assess the central thread and continuity of my Meminto book without changing it."
+  default_prompt: "Use $review-book to check my manuscript for continuity and a central thread, citing the passages."
 
 dependencies:
   tools:

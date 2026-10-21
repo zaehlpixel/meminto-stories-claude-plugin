@@ -1,7 +1,7 @@
 interface:
   display_name: "Revise a passage"
   short_description: "Preview faithful edits to any Meminto book passage"
-  default_prompt: "Use $rewrite-story to improve a passage in my Meminto book and show the changes before saving."
+  default_prompt: "Use $rewrite-story to make this book passage clearer while keeping my facts and voice. Preview before saving."
 
 dependencies:
   tools:

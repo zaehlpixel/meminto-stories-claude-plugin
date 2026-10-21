@@ -1,7 +1,7 @@
 interface:
   display_name: "Shape your book"
   short_description: "Find a flexible structure and keep the central thread"
-  default_prompt: "Use $shape-book to help organize my Meminto book around its purpose and my own material."
+  default_prompt: "Use $shape-book to find a central thread and flexible book outline in my scattered notes."
 
 dependencies:
   tools:

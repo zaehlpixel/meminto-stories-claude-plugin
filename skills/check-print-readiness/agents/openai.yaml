@@ -1,7 +1,7 @@
 interface:
   display_name: "Check before printing"
   short_description: "Find print blockers and useful editorial improvements"
-  default_prompt: "Use $check-print-readiness to review my Meminto book before printing without changing it."
+  default_prompt: "Use $check-print-readiness to check my connected book's technical blockers, warnings and optional improvements."
 
 dependencies:
   tools:

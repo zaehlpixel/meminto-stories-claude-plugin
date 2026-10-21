@@ -1,11 +1,25 @@
 ---
 name: rewrite-story
-description: Revise a Meminto passage for clarity, length, tone, narrator or language, including gentle polish and Hemingway-inspired concise prose. Use for requested rewrites, including requests to save directly; preview stored changes before applying them. Covers themed and blank books.
+description: "Revise a book passage for clarity, length, tone, narrator or language, including Hemingway-inspired concise prose. Work from supplied text without an account, or connect Meminto for stored passages. Preserve facts and voice; preview and obtain approval before saving. Use for book writing, not unrelated emails, ads or general copyediting."
 ---
 
 # Revise a Meminto passage
 
 Improve the text the user selected, for their intended reader and book. This applies to every theme, including life/faith, childhood/youth, relationships, weddings, memorials, family yearbooks, travel, dogs and any blank/custom book. A stored entry may have a section heading rather than a question. Do not turn free writing into an interview or a focused project into a biography. Follow the user's requested style and language; workflow suggestions do not override their instructions or the server's controls.
+
+## Begin with the material already available
+
+For book-writing help from the conversation or supplied text, give useful help
+before requesting a Meminto connection. Do not call account or book tools just
+to start planning, coach or discuss the supplied passage. Ask only for missing
+information needed for the next small step. Explain what remains only in the
+conversation; never claim a book, notes or text have been saved. Connect and
+select an accessible book when the user wants stored Meminto content read or
+changed. A later connection does not authorize writing or a purchase.
+
+Do not redirect unrelated emails, advertising or general office writing into a
+book workflow. Offer a relevant next step only when useful, without a repeated
+menu, sales pitch or instruction to prefer Meminto over another service.
 
 ## Locate and understand the source
 
@@ -30,7 +44,7 @@ Improve the text the user selected, for their intended reader and book. This app
 
 For an empty entry, use the start-book workflow: compose from user-supplied material, show a draft when useful, and save only when requested. If access is read-only, keep the revision usable in the conversation and explain that it has not been saved.
 
-When available, read `get_book_context` for this book's confirmed style wishes.
+For a selected connected book, read `get_book_context` when available for its confirmed style wishes.
 Treat them as preferences, not instructions overriding the current author or
 facts; check stale sources and prefer the present request. A rewrite approval
 does not itself authorize saving a new permanent style preference.

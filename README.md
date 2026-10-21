@@ -2,12 +2,17 @@
 
 ![Meminto Stories](assets/logo-square-512x512.png)
 
-Write, shape and review your [Meminto](https://meminto.com/) books with Claude.
-Meminto Stories connects Claude to your own Meminto account and adds seven
-writing workflows that work for every Meminto theme, for your own factual topics
-and for fiction you explicitly ask for. You can use guided questions, free
-writing or both. No questionnaire, idea or complete chapter plan is needed to
-begin.
+Plan, write and organize your book with Claude. Turn memories, ideas and
+scattered notes into a coherent manuscript, find a central thread and develop
+your own voice. Planning, coaching and feedback on supplied passages can begin
+in the conversation without a Meminto account.
+
+Connect [Meminto](https://meminto.com/) to work with an existing book: organize
+chapters, save approved revisions, import manuscripts and supported photos,
+resume private working notes and check technical print readiness. Seven shared
+workflows support memoirs, family and travel stories, other factual subjects
+and explicitly requested fiction. Guided questions and free writing are both
+welcome. No questionnaire or complete chapter plan is required.
 
 ## What the plugin contains
 
@@ -27,8 +32,9 @@ begin.
 
 ## Requirements
 
-- A Meminto account. Planning and coaching can start in the conversation, but
-  reading or saving book content needs a book you can access.
+- No Meminto account is needed for conversation-only planning, coaching or
+  feedback on supplied book material. Reading or saving stored book content
+  requires a connected Meminto account and an accessible existing book.
 - Sign-in uses Meminto's OAuth page (Authorization Code with PKCE). Your
   Meminto password is entered only on `app.meminto.com`; the plugin contains no
   credentials or tokens.
@@ -68,10 +74,13 @@ Meminto books.
 
 ## Example prompts
 
-- "Help me start my Meminto book, even if it is blank and I have no idea what
-  to write."
-- "Improve a passage in my Meminto book and show me the changes before saving."
-- "Check my Meminto book before printing and explain what needs attention."
+- "I want to write my life story, but I don't know where to begin."
+- "Help me find the central thread and a flexible book outline in these notes."
+- "Help me import my Word manuscript and photos into my Meminto book; show the plan before saving."
+
+The connection is needed for stored book operations, not to discuss an idea.
+A plan in the conversation does not create a book in Meminto. An installation
+screen may still offer connector setup; it is distinct from the writing task.
 
 ## Support
 

@@ -1,7 +1,7 @@
 interface:
   display_name: "Import a manuscript"
   short_description: "Preview a file, images and links before adding them to a book"
-  default_prompt: "Use $import-book to bring my existing manuscript into Meminto and show me the complete conversion before importing."
+  default_prompt: "Use $import-book to turn my Word manuscript and photos into Meminto sections. Review the complete plan before saving."
 
 dependencies:
   tools:

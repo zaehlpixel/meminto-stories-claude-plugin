@@ -1,7 +1,7 @@
 interface:
   display_name: "Grow as a writer"
   short_description: "Practise a writing technique while keeping your voice"
-  default_prompt: "Use $writing-coach to help me improve one aspect of my writing with a small practical example."
+  default_prompt: "Use $writing-coach to practise one book-writing technique with a small example in my own voice."
 
 dependencies:
   tools:

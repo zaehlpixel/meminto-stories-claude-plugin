@@ -1,8 +1,8 @@
 {
   "name": "meminto-stories",
   "displayName": "Meminto Stories",
-  "version": "1.3.0",
-  "description": "Start, shape, coach, revise and review Meminto books; import manuscripts when enabled and check print readiness.",
+  "version": "1.3.1",
+  "description": "Plan a book, find its central thread and develop your voice; connect Meminto to organize chapters, import manuscripts and photos, and check print readiness.",
   "author": {
     "name": "Meminto",
     "email": "support@meminto.com",
@@ -15,7 +15,18 @@
   "documentationUrl": "https://helpdesk.meminto.com/en/",
   "repository": "https://github.com/zaehlpixel/meminto-stories-claude-plugin",
   "license": "SEE LICENSE IN LICENSE",
-  "keywords": ["books", "writing", "memories", "memoir", "family", "writing-coach", "editing"],
+  "keywords": [
+    "books",
+    "book-writing",
+    "memoir",
+    "autobiography",
+    "family-history",
+    "manuscript",
+    "chapter-planning",
+    "writing-coach",
+    "editing",
+    "manuscript-import"
+  ],
   "icon": "./assets/logo-square-512x512.png",
   "mcpServers": "./.mcp.json"
 }

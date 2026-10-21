@@ -1,6 +1,6 @@
 ---
 name: check-print-readiness
-description: Check a Meminto book's technical print readiness, distinguish blockers from warnings and optional improvements, or obtain a watermarked preview when requested. Use for themed and blank/custom books; a purely editorial review of structure or continuity belongs to review-book.
+description: "Check a connected Meminto book before printing: distinguish technical blockers, warnings and optional improvements, or obtain a watermarked preview when requested. Use for technical book and photo checks, not a general manuscript critique or a guarantee of print quality. Editorial structure and continuity belong to review-book."
 ---
 
 # Check a book before printing

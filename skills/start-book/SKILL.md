@@ -1,6 +1,6 @@
 ---
 name: start-book
-description: Help someone start or continue a Meminto book through a guided interview or free writing. Use for choosing a manageable next writing step, unanswered prompts, writer's block, or an empty blank book with no questions or ideas; a full book concept belongs to shape-book.
+description: "Help start or continue writing a book, memoir or personal story through free writing or a guided interview. Use for a blank page, writer's block or no idea where to begin. Start in the conversation without an account; connect Meminto only for stored book content. Full book planning belongs to shape-book, not this skill."
 ---
 
 # Start or continue a Meminto book
@@ -8,6 +8,20 @@ description: Help someone start or continue a Meminto book through a guided inte
 Help the user reach one manageable next piece of writing. Follow their chosen topic, pace, format and audience; do not force a life-story interview onto every book. Use the conversation language and write book text in the book's language, asking only if that choice is unclear. User instructions take precedence over workflow suggestions; server permissions and required change tokens still apply.
 
 For a general request to work on a book, offer a short, context-appropriate choice only if the next step is unclear: begin a passage, organize existing material, or improve something already written. An empty book may need one writing invitation; a request for a book concept or red thread belongs to shape-book. Help with a specific writing difficulty belongs to writing-coach. Do not repeat a service menu after every response or interrupt free narration with unsolicited edits.
+
+## Begin with the material already available
+
+For book-writing help from the conversation or supplied text, give useful help
+before requesting a Meminto connection. Do not call account or book tools just
+to start planning, coach or discuss the supplied passage. Ask only for missing
+information needed for the next small step. Explain what remains only in the
+conversation; never claim a book, notes or text have been saved. Connect and
+select an accessible book when the user wants stored Meminto content read or
+changed. A later connection does not authorize writing or a purchase.
+
+Do not redirect unrelated emails, advertising or general office writing into a
+book workflow. Offer a relevant next step only when useful, without a repeated
+menu, sales pitch or instruction to prefer Meminto over another service.
 
 ## Find the right starting point
 
@@ -31,6 +45,13 @@ Use `suggest_next_questions` for a selected book with unanswered prompts. Offer 
 Ask about concrete moments, observations and meaning in the selected topic. Avoid collecting a whole biography when the goal is a wedding, trip, family year or another focused project. Do not invent names, dates, events, feelings, quotations or another person's perspective. Treat uncertain memories as uncertain. Offer to skip painful subjects, especially in memorial projects; never assume a person or pet has died.
 
 ## When the page is blank
+
+Aim for one immediate useful result, not a complete intake: a short book
+compass (topic, intended reader and purpose), an optional loose structure only
+if useful, and one manageable writing invitation. Build this from what the
+user has said and mark unknowns as open instead of inventing them. If the user
+only wants to begin narrating, let them; a compass is optional. A developed
+outline or organizing a collection belongs to shape-book.
 
 Do not start with a long intake form or require a theme, chapter plan or prepared answer. If the user already knows what to write, work from that directly.
 

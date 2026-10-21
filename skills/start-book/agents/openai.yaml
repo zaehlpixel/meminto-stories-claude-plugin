@@ -1,7 +1,7 @@
 interface:
   display_name: "Start your book"
   short_description: "Find a starting point for any themed or blank book"
-  default_prompt: "Use $start-book to help me begin or continue my Meminto book, even if I have no topic or questions yet."
+  default_prompt: "Use $start-book to help me begin writing a book, even if I have no idea or prepared questions."
 
 dependencies:
   tools:
