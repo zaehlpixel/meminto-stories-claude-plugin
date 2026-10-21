@@ -1,0 +1,32 @@
+---
+name: check-print-readiness
+description: Check a Meminto book's technical print readiness, distinguish blockers from warnings and optional improvements, or obtain a watermarked preview when requested. Use for themed and blank/custom books; a purely editorial review of structure or continuity belongs to review-book.
+---
+
+# Check a book before printing
+
+Provide an evidence-based assessment and practical next steps for the selected book. Work with every topic and writing style: life/faith, childhood/youth, relationship, wedding, memorial, family yearbook, travel, dog or blank/custom projects. Follow the user's intended scope and audience rather than requiring a complete biography or full questionnaire. User instructions take precedence over editorial suggestions; tool permissions and actual technical blockers still apply.
+
+## Read and inspect
+
+1. Use `list_books` and `get_book_outline` to select the accessible book and establish its actual theme, content, structure and the user's role. If truncated, fetch the relevant chapters before claiming coverage of the whole book.
+2. Run `validate_before_print`. Keep each returned finding's severity and location. Use `list_book_media`, `get_question` or focused `search_books` calls to investigate specific findings, rather than reading unrelated private books. `analyse_book` can help assess a requested editorial review; its counts alone are not evidence of an error.
+3. Separate technical blockers from warnings and optional editorial suggestions. Report actual blockers even in a custom book; do not silently dismiss them because the template is blank. If a tool finding seems to reflect intentional design, explain the distinction and what still needs checking in Meminto.
+
+## Judge completeness against the book's purpose
+
+- Keep an ordinary print check focused. A requested in-depth assessment of the book's central thread, continuity, structure or narrative voice belongs to review-book; offer that separately when useful. An editorial assessment never replaces technical validation.
+- Unanswered template questions, short chapters and uneven coverage do not by themselves make a book unfinished. Check whether the user intentionally omitted them. A blank book needs no predefined questions, a life arc or a minimum number of chapters imposed by the assistant.
+- For a life or faith book, consider only relevant narrative gaps; do not demand coverage of every decade or a particular belief. For childhood/youth, keep observer and narrator perspectives clear. For relationships and weddings, check names and attribution without inventing another person's voice. For memorials and pet books, respect the chosen scope and never demand painful details. For yearbooks and travel books, check the selected period/route rather than extending it into a whole lifetime. For any custom book, judge against its own organizing idea, including explicitly fictional projects.
+- Look for accidental duplicates, inconsistent names/dates, draft placeholders, abrupt transitions and unclear section headings only where the actual text supports the observation. Quote or locate a small example, explain uncertainty, and suggest a fix. Do not auto-complete omitted stories or present guesses as facts.
+- Report media resolution, missing files, captions and QR targets from tool evidence. Pass on print-quality warnings. Do not guarantee QR destinations will remain available forever or claim a rendered preview proves every physical printing requirement.
+
+## Return a useful result
+
+Lead with the current assessment, qualified by any incomplete coverage or unavailable checks. Group findings into blockers, warnings and optional improvements; include the affected chapter/section and a concrete next action. If there are many findings, prioritize them and disclose the total rather than hiding the remainder. Mention what is already working when helpful. If the book is empty, explain that there is no content to assess yet and offer one small start, not a fabricated readiness score.
+
+A review request does not authorize fixes. Do not rewrite, remove, move or merge text/media, change collaborators, accept contributions or order anything as a side effect of checking. If the user requests a fix, prepare it using the appropriate tool workflow and required approvals. Local original media should use `create_upload_link` for the selected entry; never downscale a photo merely to fit a tool message. Use `attach_media` only for a suitable public-web photo and pass on the returned quality warning.
+
+## If a preview file is requested
+
+Run `validate_before_print` before `render_book_preview` and explain any blockers first. A request to check readiness alone does not request rendering. If rendering is allowed, call `render_book_preview` for that book, then poll the same tool while it reports a pending state. Do not use `force` unless a rebuild is needed and requested. Stop on an error; after several pending polls, report that it is still processing and offer to check again instead of looping indefinitely. On readiness, return only the server-provided link and clearly call it a watermarked preview. This plugin does not order books, process payment or provide a clean print-ready export.

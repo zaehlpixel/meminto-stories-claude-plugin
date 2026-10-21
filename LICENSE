@@ -1,0 +1,28 @@
+Meminto Stories plugin for Claude - Proprietary License
+
+Copyright (c) 2026 Meminto GmbH. All rights reserved.
+
+This license covers only the files distributed in this plugin package: the
+plugin manifest, the MCP server configuration, the README, the skills and their
+reference files. It does not cover the Meminto Stories application, its server
+software or any Meminto service, which are not part of this package.
+
+Meminto GmbH grants you a non-exclusive, non-transferable, revocable license to
+install and use this plugin, unmodified, with Claude and other compatible
+clients in order to work with your own Meminto account. You may not modify,
+redistribute, sublicense or sell the plugin or any part of it, or publish
+modified copies, without prior written permission from Meminto GmbH.
+
+The names "Meminto" and "Meminto Stories" and the Meminto logo are trademarks of
+Meminto GmbH. This license grants no right to use them except as part of the
+unmodified plugin.
+
+Your use of the Meminto service through this plugin is governed by the Meminto
+General Terms and Conditions (https://meminto.com/general-terms-and-conditions/)
+and Privacy Policy (https://meminto.com/privacy-policy/).
+
+THE PLUGIN IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, TO THE EXTENT PERMITTED BY APPLICABLE LAW. Mandatory statutory
+liability remains unaffected.
+
+Contact: support@meminto.com

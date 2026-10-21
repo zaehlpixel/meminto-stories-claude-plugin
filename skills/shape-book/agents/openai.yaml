@@ -1,0 +1,12 @@
+interface:
+  display_name: "Shape your book"
+  short_description: "Find a flexible structure and keep the central thread"
+  default_prompt: "Use $shape-book to help organize my Meminto book around its purpose and my own material."
+
+dependencies:
+  tools:
+    - type: "mcp"
+      value: "meminto-stories"
+      description: "Read and edit the connected user's Meminto books"
+      transport: "streamable_http"
+      url: "https://app.meminto.com/mcp/v1/mcp.php"
