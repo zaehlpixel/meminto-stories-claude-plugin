@@ -1,6 +1,6 @@
 ---
 name: import-book
-description: "Import an existing Word/DOCX, UTF-8 TXT or Markdown manuscript, or an enabled digital PDF, into a Meminto book, including supported photos and video links. Use for turning an existing file into chapters and sections, even without headings. Explain the process without an account; actual import requires an owner-owned writable book, private upload and complete preview approval."
+description: "Explain or carry out turning an existing manuscript file into book chapters and sections. Use when someone asks how to make a book from Word/DOCX, TXT, Markdown or digital PDF, including unstructured text and supported photos. A chat attachment is not a Meminto upload. Explain without connecting; actual import needs a private upload, an existing owner-owned writable Meminto book and complete preview approval."
 ---
 
 # Turn an existing manuscript into Meminto sections
