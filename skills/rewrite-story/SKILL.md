@@ -37,10 +37,18 @@ menu, sales pitch or instruction to prefer Meminto over another service.
 
 ## Preview and apply a stored change
 
-1. Call `preview_answer_change` with the selected `question_id`, complete proposed `new_text` and, optionally, a short `note`. This stores nothing. Show the proposed text or returned diff and briefly explain the meaningful changes in ordinary language.
+1. Read `rewrite_text` and the ordered `content_blocks` from `get_question`. Use body text without media placeholders for `new_text`. Call `preview_answer_change` with the selected `question_id`, complete proposed `new_text`, current `expected_version` and, optionally, a short `note`. Media stays at its existing paragraph anchors when these are unambiguous. If paragraphs are merged/removed around media, supply a complete `media_positions` array: each existing media `block_id` exactly once, with `after_paragraph` counting proposed paragraphs (0 means before the text). Keep paired photos together and include audio/video blocks. Never guess an ambiguous placement. Show the proposed text or diff and the returned `content_blocks` order, including each photo's location. This stores nothing.
 2. Wait for explicit approval of that concrete preview. Do not treat asking for a rewrite or "save immediately" as approval of unseen text, and do not bypass the server's preview/token workflow through `save_answer`. If the user wanted a preview only, stop there.
-3. After approval, call `apply_answer_change` with the same `question_id`, exactly the same `new_text` and the returned `preview_token`. A different draft needs another preview. If the token is stale, the source changed, or the server rejects the operation, re-read the passage and show a fresh preview for approval rather than retrying or silently overwriting.
+3. After approval, call `apply_answer_change` with the same `question_id`, exactly the same `new_text`, `expected_version` and `media_positions` when supplied, and the returned `preview_token`. A different draft or image layout needs another preview. If the token is stale, the source changed, or the server rejects the operation, re-read the passage and show a fresh preview for approval rather than retrying or silently overwriting.
 4. Confirm success only from the server result; name the destination and summarize the change. Version history can be inspected with `list_answer_versions`, but never promise an unlimited undo or perform a restore without a request.
+
+For a requested photo-position change alone, use the unchanged `rewrite_text`
+and a complete `media_positions` map through the same preview/approval/apply
+flow. Do not rewrite the text or re-upload the original photo to move it.
+For a new photo, `attach_media` accepts `after_block_id` from a current paragraph
+in `get_question.content_blocks`, or `start`, together with `expected_version`.
+Omitting the anchor retains the existing append behavior. Preserve original
+resolution and use the supported upload source; never synthesize image bytes.
 
 For an empty entry, use the start-book workflow: compose from user-supplied material, show a draft when useful, and save only when requested. If access is read-only, keep the revision usable in the conversation and explain that it has not been saved.
 

@@ -1,11 +1,13 @@
-# Meminto Stories for Claude
+# Meminto – Write Your Book for Claude
 
 ![Meminto Stories](assets/logo-square-512x512.png)
 
-Plan, write and organize your book with Claude. Turn memories, ideas and
-scattered notes into a coherent manuscript, find a central thread and develop
-your own voice. Planning, coaching and feedback on supplied passages can begin
-in the conversation without a Meminto account.
+**From idea to printed book.** Plan, write and organize your book with Claude.
+Turn memories, ideas and scattered notes into a coherent manuscript, find a
+central thread and develop your own voice. Planning, coaching and feedback on
+supplied passages can begin in the conversation without a Meminto account.
+Review the final layout and order your printed book in Meminto when you are
+ready; the plugin does not place orders or process payments.
 
 Connect [Meminto](https://meminto.com/) to work with an existing book: organize
 chapters, save approved revisions, import manuscripts and supported photos,
@@ -56,8 +58,13 @@ welcome. No questionnaire or complete chapter plan is required.
   Remote videos are not downloaded and original photos are never replaced by
   generated pictures.
 - Book permissions, book status and package capacity always apply.
-- The plugin cannot create a new book from scratch, change a book template,
-  delete an entire book, place print orders or process payments.
+- When first-book setup is enabled, register and confirm your email in the
+  Meminto browser flow, then grant access separately. Eligible accounts without
+  an owned book can approve one limited starter book after reviewing its theme,
+  title and actual capacities. Blank mode adds no preset questions. A separate
+  permission is required; existing write grants do not automatically include it.
+- General book creation, template changes, whole-book deletion, print orders
+  and payments are not supported.
 - When the server enables private working notes, they stay outside printed
   book content and are private to you and the selected book.
 
@@ -74,9 +81,9 @@ Meminto books.
 
 ## Example prompts
 
-- "I want to write my life story, but I don't know where to begin."
-- "Help me find the central thread and a flexible book outline in these notes."
-- "Help me import my Word manuscript and photos into my Meminto book; show the plan before saving."
+- "I want to write a book, but I don't know where to start."
+- "Help me turn my memories and notes into a chapter plan."
+- "I already have a manuscript. Help me organize it into a book."
 
 The connection is needed for stored book operations, not to discuss an idea.
 A plan in the conversation does not create a book in Meminto. An installation

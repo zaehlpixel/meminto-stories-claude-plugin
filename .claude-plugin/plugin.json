@@ -1,8 +1,8 @@
 {
   "name": "meminto-stories",
-  "displayName": "Meminto Stories",
-  "version": "1.3.2",
-  "description": "Plan a book, find its central thread and develop your voice; connect Meminto to organize chapters, import manuscripts and photos, and check print readiness.",
+  "displayName": "Meminto – Write Your Book",
+  "version": "1.4.2",
+  "description": "From idea to printed book: plan, write and organize your book with Claude. Shape chapters, revise passages, import manuscripts and photos, then review the layout and order your printed book in Meminto.",
   "author": {
     "name": "Meminto",
     "email": "support@meminto.com",
@@ -12,7 +12,7 @@
   "privacyPolicyUrl": "https://meminto.com/privacy-policy/",
   "termsOfServiceUrl": "https://meminto.com/general-terms-and-conditions/",
   "supportUrl": "https://helpdesk.meminto.com",
-  "documentationUrl": "https://helpdesk.meminto.com/en/",
+  "documentationUrl": "https://helpdesk.meminto.com/en/article/meminto-mcp-and-chatgpt-claude-plugin-1uq9dmc/",
   "repository": "https://github.com/zaehlpixel/meminto-stories-claude-plugin",
   "license": "SEE LICENSE IN LICENSE",
   "keywords": [

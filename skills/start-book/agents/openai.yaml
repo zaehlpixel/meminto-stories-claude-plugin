@@ -1,7 +1,7 @@
 interface:
   display_name: "Start your book"
   short_description: "Find a starting point for any themed or blank book"
-  default_prompt: "Use $start-book to help me begin writing a book, even if I have no idea or prepared questions."
+  default_prompt: "Use $start-book to help me begin my book from an idea, existing material, or a blank page."
 
 dependencies:
   tools:
