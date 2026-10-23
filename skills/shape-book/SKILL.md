@@ -87,10 +87,24 @@ sufficient; do not ask again for the same action.
 
 Respect the returned role and package limits. Use `add_chapter` / `add_question`
 only for agreed additions, `reorder_chapters` with every current chapter ID
-exactly once, and `move_question` for agreed section moves. These tools do not
-create a new book, switch its template or rename an existing chapter. Preserve
+exactly once, and `move_question` for agreed section moves. A chapter is the
+titled container; a section is one question with its answer text, and a chapter
+holds many sections. `update_title` renames the book (`target: "book"`, which
+also sets the cover title), a chapter (`target: "chapter"`) or a section
+(`target: "section"`) once the author approved the wording. A Mini book has two
+independent limits, one for chapters and one for sections; read
+`permissions.capacity`, `can_add_chapters` and `can_add_sections` from
+`get_book_outline`, and remember that a full chapter list still leaves room for
+a section in an existing chapter. The author name on the cover and the
+dedication are read from `book_details` and changed with `update_book_details`
+after the author approved the exact wording. These tools do not create a new
+book or switch its template. Preserve
 text and attached media; a structural plan does not authorize rewriting,
 merging, splitting or deleting content. Rewriting existing text needs its own
 preview and approval. Refresh the outline before changes and after a partial
 failure, inspect what succeeded, and do not blindly retry additions or moves.
 Confirm only changes backed by tool receipts.
+
+## When something does not work or is missing
+
+If a tool fails in a way that looks like a defect, or the author misses a function the connector does not offer, you may offer to tell Meminto support. Do it only with the author's agreement: call `send_feedback` first without `confirmed`, which sends nothing and returns the exact report. Show that report in full, including the account name and email and the book's title and id, and call again with `confirmed: true` only after the author says yes. Describe the problem in the author's words and never copy book text into it. Do not send feedback on your own initiative. Without a connected account, point to https://helpdesk.meminto.com instead.

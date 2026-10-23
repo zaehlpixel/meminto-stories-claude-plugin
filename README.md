@@ -10,7 +10,8 @@ Review the final layout and order your printed book in Meminto when you are
 ready; the plugin does not place orders or process payments.
 
 Connect [Meminto](https://meminto.com/) to work with an existing book: organize
-chapters, save approved revisions, import manuscripts and supported photos,
+chapters, rename the book, chapters and sections, change the author name and the
+dedication, save approved revisions, import manuscripts and supported photos,
 resume private working notes and check technical print readiness. Seven shared
 workflows support memoirs, family and travel stories, other factual subjects
 and explicitly requested fiction. Guided questions and free writing are both
@@ -63,6 +64,14 @@ welcome. No questionnaire or complete chapter plan is required.
   an owned book can approve one limited starter book after reviewing its theme,
   title and actual capacities. Blank mode adds no preset questions. A separate
   permission is required; existing write grants do not automatically include it.
+- Titles, the author name on the cover and the dedication change only after you
+  approved the exact wording. A Mini book has separate limits for chapters and
+  sections; a full chapter list does not stop you from writing in an existing
+  chapter.
+- Feedback to Meminto support is optional. The assistant first shows you the
+  complete message and sends it only after you agree; it contains your words, a
+  few technical facts, your account name and email (so support can reply) and the
+  title and ID of the book concerned, never book text.
 - General book creation, template changes, whole-book deletion, print orders
   and payments are not supported.
 - When the server enables private working notes, they stay outside printed
@@ -96,3 +105,8 @@ screen may still offer connector setup; it is distinct from the writing task.
 - Website: https://meminto.com/
 
 Copyright Meminto GmbH. See [LICENSE](LICENSE).
+
+If you choose to send feedback, the message you approved goes to Meminto support
+(support@meminto.com) together with your account name and email, the title and ID
+of the book concerned and a few technical facts such as the tool involved. It
+never contains book text and is never sent without your agreement.
