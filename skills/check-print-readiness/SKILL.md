@@ -11,7 +11,8 @@ Provide an evidence-based assessment and practical next steps for the selected b
 
 1. Use `list_books` and `get_book_outline` to select the accessible book and establish its actual theme, content, structure and the user's role. If truncated, fetch the relevant chapters before claiming coverage of the whole book.
 2. Run `validate_before_print`. Keep each returned finding's severity and location. Use `list_book_media`, `get_question` or focused `search_books` calls to investigate specific findings, rather than reading unrelated private books. `analyse_book` can help assess a requested editorial review; its counts alone are not evidence of an error.
-3. Separate technical blockers from warnings and optional editorial suggestions. Report actual blockers even in a custom book; do not silently dismiss them because the template is blank. If a tool finding seems to reflect intentional design, explain the distinction and what still needs checking in Meminto.
+3. Check what the cover and the first pages say with `book_details` from `get_book_outline`: the title, the `author_name` (when `author_name_is_default` is true the owner's name is used) and whether the dedication page is switched on and what it says. Mention anything that looks unintended, such as a missing dedication text on an enabled page. Offer a change only as an option: with the author's approval of the exact wording use `update_book_details` for the author name or the dedication and `update_title` with `target: "book"` for the title. Checking does not authorize these changes.
+4. Separate technical blockers from warnings and optional editorial suggestions. Report actual blockers even in a custom book; do not silently dismiss them because the template is blank. If a tool finding seems to reflect intentional design, explain the distinction and what still needs checking in Meminto.
 
 ## Judge completeness against the book's purpose
 
@@ -30,3 +31,7 @@ A review request does not authorize fixes. Do not rewrite, remove, move or merge
 ## If a preview file is requested
 
 Run `validate_before_print` before `render_book_preview` and explain any blockers first. A request to check readiness alone does not request rendering. If rendering is allowed, call `render_book_preview` for that book, then poll the same tool while it reports a pending state. Do not use `force` unless a rebuild is needed and requested. Stop on an error; after several pending polls, report that it is still processing and offer to check again instead of looping indefinitely. On readiness, return only the server-provided link and clearly call it a watermarked preview. This plugin does not order books, process payment or provide a clean print-ready export.
+
+## When something does not work or is missing
+
+If a tool fails in a way that looks like a defect, or the author misses a function the connector does not offer, you may offer to tell Meminto support. Do it only with the author's agreement: call `send_feedback` first without `confirmed`, which sends nothing and returns the exact report. Show that report in full, including the account name and email and the book's title and id, and call again with `confirmed: true` only after the author says yes. Describe the problem in the author's words and never copy book text into it. Do not send feedback on your own initiative. Without a connected account, point to https://helpdesk.meminto.com instead.

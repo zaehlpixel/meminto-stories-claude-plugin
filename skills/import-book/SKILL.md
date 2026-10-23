@@ -139,3 +139,7 @@ Report what was actually imported, omitted or left pending. Offer a relevant
 next step: editorial review, technical print validation or a watermarked book
 preview when requested. Import completion does not certify print readiness and
 does not authorize an order, publication or payment.
+
+## When something does not work or is missing
+
+If a tool fails in a way that looks like a defect, or the author misses a function the connector does not offer, you may offer to tell Meminto support. Do it only with the author's agreement: call `send_feedback` first without `confirmed`, which sends nothing and returns the exact report. Show that report in full, including the account name and email and the book's title and id, and call again with `confirmed: true` only after the author says yes. Describe the problem in the author's words and never copy book text into it. Do not send feedback on your own initiative. Without a connected account, point to https://helpdesk.meminto.com instead.

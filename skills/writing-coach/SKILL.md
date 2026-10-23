@@ -84,3 +84,7 @@ on a note. These notes are private to this user/book and never printed; they
 are not shared with other contributors. `items: []` clears them when requested.
 If these tools are absent, keep a copyable handoff in the conversation and say
 that it has not been saved across chats. Never store notes in printable answers.
+
+## When something does not work or is missing
+
+If a tool fails in a way that looks like a defect, or the author misses a function the connector does not offer, you may offer to tell Meminto support. Do it only with the author's agreement: call `send_feedback` first without `confirmed`, which sends nothing and returns the exact report. Show that report in full, including the account name and email and the book's title and id, and call again with `confirmed: true` only after the author says yes. Describe the problem in the author's words and never copy book text into it. Do not send feedback on your own initiative. Without a connected account, point to https://helpdesk.meminto.com instead.

@@ -1,8 +1,8 @@
 {
   "name": "meminto-stories",
   "displayName": "Meminto – Write Your Book",
-  "version": "1.4.2",
-  "description": "From idea to printed book: plan, write and organize your book with Claude. Shape chapters, revise passages, import manuscripts and photos, then review the layout and order your printed book in Meminto.",
+  "version": "1.5.0",
+  "description": "From idea to printed book: plan, write and organize your book with Claude. Shape chapters, rename titles, revise passages, import manuscripts and photos, then review the layout and order your printed book in Meminto.",
   "author": {
     "name": "Meminto",
     "email": "support@meminto.com",
