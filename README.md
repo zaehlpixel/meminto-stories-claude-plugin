@@ -11,7 +11,8 @@ ready; the plugin does not place orders or process payments.
 
 Connect [Meminto](https://meminto.com/) to work with an existing book: organize
 chapters, rename the book, chapters and sections, change the author name and the
-dedication, save approved revisions, import manuscripts and supported photos,
+dedication, save approved revisions, delete answers, sections or chapters into
+the book's trash and restore them, import manuscripts and supported photos,
 resume private working notes and check technical print readiness. Seven shared
 workflows support memoirs, family and travel stories, other factual subjects
 and explicitly requested fiction. Guided questions and free writing are both
@@ -49,6 +50,10 @@ welcome. No questionnaire or complete chapter plan is required.
   applied only after your explicit approval and only with the matching current
   preview version. Facts, uncertainty, narrator, voice and media are preserved.
   Missing memories, dialogue and facts are never invented.
+- Deleting one answer, section or chapter is shown as a preview first,
+  including any writing by other people, and happens only after your explicit
+  approval. Deleted items go to the book's trash and can be restored. One item
+  per request; whole books cannot be deleted.
 - Manuscript import is owner-only and needs an existing writable book. A file
   attached to the chat is not a Meminto upload: the skill gives you a private
   upload link, shows the complete converted plan, and adds new chapters and
