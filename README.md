@@ -70,7 +70,11 @@ welcome. No questionnaire or complete chapter plan is required.
   title and actual capacities. Blank mode adds no preset questions. A separate
   permission is required; existing write grants do not automatically include it.
 - Titles, the author name on the cover and the dedication change only after you
-  approved the exact wording. A Mini book has separate limits for chapters and
+  approved the exact wording. Before printing, the assistant asks whether you
+  want a dedication if the page is still empty.
+- The print layout (table of contents, chapter and story titles, a new page
+  before each story) can be changed for the whole book or for single stories,
+  only after you agree. A Mini book has separate limits for chapters and
   sections; a full chapter list does not stop you from writing in an existing
   chapter.
 - Feedback to Meminto support is optional. The assistant first shows you the

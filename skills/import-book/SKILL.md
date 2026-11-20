@@ -38,8 +38,9 @@ upload. Do not emulate bulk import through many unreviewed `save_answer` calls.
 ## Upload and wait for conversion
 
 Call `prepare_book_import` for the agreed book and give the private upload link
-to the author. They upload the original file there. The single-use link lasts
-30 minutes; temporary source/previews expire after 24 hours. Do not paste its
+to the author. They upload the original file there. The single-use link stays
+open for `upload_expires_in_seconds` (currently 2 hours); temporary
+source/previews expire after 24 hours. Do not paste its
 token into other tools, logs or remote services. No book content changes yet.
 
 DOCX supports ordinary paragraphs, Heading 1/2, simple tables as text, embedded
