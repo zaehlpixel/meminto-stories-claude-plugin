@@ -97,7 +97,12 @@ independent limits, one for chapters and one for sections; read
 `get_book_outline`, and remember that a full chapter list still leaves room for
 a section in an existing chapter. The author name on the cover and the
 dedication are read from `book_details` and changed with `update_book_details`
-after the author approved the exact wording. These tools do not create a new
+after the author approved the exact wording. When the structure is settled and
+the dedication page is still empty, ask once whether the author wants a
+dedication. The print layout (table of contents, chapter and story titles, a
+new page before each story) is `print_settings`; change it book-wide with
+`update_book_details` or for single stories with `set_story_print_options`,
+only after the author agreed. These tools do not create a new
 book or switch its template. Preserve
 text and attached media; a structural plan does not authorize rewriting,
 merging, splitting or deleting content. Rewriting existing text needs its own
